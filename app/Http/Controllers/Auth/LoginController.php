@@ -22,5 +22,7 @@ class LoginController extends Controller
                 'token' => $token->plainTextToken,
             ], 200);
         }
+
+        return response('', 404);
     }
 }
